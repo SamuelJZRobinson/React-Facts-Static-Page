@@ -1,7 +1,10 @@
 export default function Header() {
   return (
     <header>
-      <img class="logo" src="./src/assets/react-logo.png" alt="React Logo" />
+      <div id="logo-container">
+        <img class="logo" src="./src/assets/react-logo.png" alt="React Logo" />
+        <p>FactCo</p>
+      </div>
       <nav>
         <ul class="nav-list">
           <li>

@@ -3,7 +3,7 @@ export default function Card() {
     <>
       <div class="card">
         <div class="label">
-          <img class="icon" src="./src/assets/react-logo.png"></img>
+          <img class="icon" src="./src/assets/react-logo.png" />
           <p class="title">React</p>
         </div>
         <ul>
@@ -16,6 +16,7 @@ export default function Card() {
         <a class="source" href="https://en.wikipedia.org/wiki/React_(software)">
           Source
         </a>
+        <img class="overlay" src="./src/assets/react-logo.png" />
       </div>
     </>
   );

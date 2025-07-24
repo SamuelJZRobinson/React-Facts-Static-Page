@@ -85,6 +85,15 @@ header {
   background-color: hsl(195, 10%, 18%);
 }
 
+#logo-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: rgb(79, 198, 219);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 ul.nav-list {
   display: flex;
   gap: 1rem;
@@ -111,7 +120,8 @@ main {
 }
 
 main li::marker {
-  color: darkcyan;
+  color: rgb(79, 198, 219);
+  font-size: 1.25rem;
 }
 
 .card-container {
@@ -123,11 +133,22 @@ main li::marker {
 }
 
 .card {
+  position: relative;
   width: 100%;
   padding: 1rem;
   border: 2px solid hsla(0, 0%, 0%, 15%);
   background-color: hsl(195, 10%, 85%);
   border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card img.overlay {
+  position: absolute;
+  right: calc(-16rem / 2);
+  top: -1%;
+  width: 16rem;
+  filter: grayscale();
+  opacity: 75%;
 }
 
 .card ul {
