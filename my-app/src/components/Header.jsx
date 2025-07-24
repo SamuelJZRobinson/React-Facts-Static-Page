@@ -2,11 +2,15 @@ export default function Header() {
   return (
     <header>
       <div id="logo-container">
-        <img class="logo" src="./src/assets/react-logo.png" alt="React Logo" />
+        <img
+          className="logo"
+          src="./src/assets/react-logo.png"
+          alt="React Logo"
+        />
         <p>FactCo</p>
       </div>
       <nav>
-        <ul class="nav-list">
+        <ul className="nav-list">
           <li>
             <a href="#">Home</a>
           </li>

@@ -5,7 +5,7 @@ export default function MainContent() {
     <main>
       <h1>Facts Compiliation</h1>
 
-      <div class="card-container">
+      <div className="card-container">
         <Card
           title="React"
           imageURL="./src/assets/react-logo.png"
