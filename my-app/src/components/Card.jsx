@@ -1,22 +1,20 @@
-export default function Card() {
+export default function Card({ imageURL, text, sourceURL }) {
   return (
     <>
       <div class="card">
         <div class="label">
-          <img class="icon" src="./src/assets/react-logo.png" />
+          <img class="icon" src={imageURL} />
           <p class="title">React</p>
         </div>
         <ul>
-          <li>Recent stable release 19.1.0 on 28 March 2025</li>
-          <li>Written in JavaScript</li>
-          <li>MIT License</li>
-          <li>Free and open-source front-end JavaScript library</li>
-          <li>Original author Jordan Walke</li>
+          {text.map((fact, index) => (
+            <li key={index}>{fact}</li>
+          ))}
         </ul>
-        <a class="source" href="https://en.wikipedia.org/wiki/React_(software)">
+        <a class="source" href={sourceURL}>
           Source
         </a>
-        <img class="overlay" src="./src/assets/react-logo.png" />
+        <img class="overlay" src={imageURL} />
       </div>
     </>
   );
