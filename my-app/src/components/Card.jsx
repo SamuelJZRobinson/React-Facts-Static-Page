@@ -1,10 +1,10 @@
-export default function Card({ imageURL, text, sourceURL }) {
+export default function Card({ title, imageURL, text, sourceURL }) {
   return (
     <>
       <div class="card">
         <div class="label">
           <img class="icon" src={imageURL} />
-          <p class="title">React</p>
+          <p class="title">{title}</p>
         </div>
         <ul>
           {text.map((fact, index) => (
