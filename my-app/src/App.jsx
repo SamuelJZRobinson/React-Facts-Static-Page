@@ -24,12 +24,27 @@ function Header() {
   );
 }
 
+function Main() {
+  return (
+    <main>
+      <h1>Facts Compiliation</h1>
+
+      <div class="card-container">
+        <Card />
+        <Card />
+      </div>
+    </main>
+  );
+}
+
 function Card() {
   return (
     <>
       <div class="card">
-        <h1>Facts Compiliation</h1>
-        <a href="https://en.wikipedia.org/wiki/React_(software)">Source</a>
+        <div class="label">
+          <img class="icon" src="./src/assets/react-logo.png"></img>
+          <p class="title">React</p>
+        </div>
         <ul>
           <li>Recent stable release 19.1.0 on 28 March 2025</li>
           <li>Written in JavaScript</li>
@@ -37,6 +52,9 @@ function Card() {
           <li>Free and open-source front-end JavaScript library</li>
           <li>Original author Jordan Walke</li>
         </ul>
+        <a class="source" href="https://en.wikipedia.org/wiki/React_(software)">
+          Source
+        </a>
       </div>
     </>
   );
@@ -54,9 +72,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
-        <Card />
-      </main>
+      <Main />
       <Footer />
     </>
   );
