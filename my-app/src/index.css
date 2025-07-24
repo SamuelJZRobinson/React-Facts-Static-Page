@@ -86,7 +86,7 @@ header {
   background-color: hsl(195, 10%, 18%);
 }
 
-#logo-container {
+#logo-container a {
   display: flex;
   gap: 0.5rem;
   align-items: center;

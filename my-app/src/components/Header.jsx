@@ -2,12 +2,14 @@ export default function Header() {
   return (
     <header>
       <div id="logo-container">
-        <img
-          className="logo"
-          src="./src/assets/react-logo.png"
-          alt="React Logo"
-        />
-        <p>FactCo</p>
+        <a href="#">
+          <img
+            className="logo"
+            src="./src/assets/react-logo.png"
+            alt="React Logo"
+          />
+          <p>FactCo</p>
+        </a>
       </div>
       <nav>
         <ul className="nav-list">
