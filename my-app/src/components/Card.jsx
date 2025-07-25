@@ -1,20 +1,20 @@
-export default function Card({ title, imageURL, text, sourceURL }) {
+export default function Card(props) {
   return (
     <>
       <div className="card">
         <div className="label">
-          <img className="icon" src={imageURL} />
-          <p className="title">{title}</p>
+          <img className="icon" src={props.imageURL} />
+          <p className="title">{props.title}</p>
         </div>
         <ul>
-          {text.map((fact, index) => (
+          {props.text.map((fact, index) => (
             <li key={index}>{fact}</li>
           ))}
         </ul>
-        <a className="source" href={sourceURL}>
+        <a className="source" href={props.sourceURL}>
           Source
         </a>
-        <img className="overlay" src={imageURL} />
+        <img className="overlay" src={props.imageURL} />
       </div>
     </>
   );
